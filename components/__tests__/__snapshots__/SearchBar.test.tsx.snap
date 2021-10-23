@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`searchBar should check all cases 1`] = `
+<body>
+  <div>
+    <div
+      aria-expanded="true"
+      aria-owns="autocomplete-listbox"
+      class="MuiAutocomplete-root Mui-focused MuiAutocomplete-hasClearIcon ep0uteb4 css-78p48u-MuiAutocomplete-root-StyledAutocomplete"
+      role="combobox"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ep0uteb2 css-1cntsc7-MuiSvgIcon-root-StyledSearchIcon"
+        data-testid="SearchIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+        />
+      </svg>
+      <div
+        class="MuiFormControl-root MuiFormControl-marginNone MuiFormControl-fullWidth MuiTextField-root ep0uteb3 css-1oyzkgj-MuiFormControl-root-StyledTextField"
+      >
+        <div
+          class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth Mui-focused MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-4a33cb-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <input
+            aria-autocomplete="list"
+            aria-controls="autocomplete-listbox"
+            aria-invalid="false"
+            autocapitalize="none"
+            autocomplete="off"
+            class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused MuiAutocomplete-input MuiAutocomplete-inputFocused css-b55ri7-MuiInputBase-input-MuiOutlinedInput-input"
+            id="autocomplete"
+            placeholder="Search..."
+            spellcheck="false"
+            type="text"
+          />
+          <div
+            class="MuiAutocomplete-endAdornment css-1q60rmi-MuiAutocomplete-endAdornment"
+          >
+            <button
+              aria-label="Clear"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-clearIndicator css-1ou7wa2-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-clearIndicator"
+              tabindex="-1"
+              title="Clear"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label css-4jkopv-MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-ptiqhd-MuiSvgIcon-root"
+                  data-testid="CloseIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-1o2jng6-MuiOutlinedInput-notchedOutline"
+            style="padding-left: 8px;"
+          >
+            <legend
+              class="css-1br1jja"
+              style="width: 0.01px;"
+            >
+              <span
+                class="notranslate"
+              >
+                ​
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiAutocomplete-popper MuiAutocomplete-popperDisablePortal css-p8t6er-MuiAutocomplete-popper"
+      data-popper-escaped=""
+      data-popper-placement="bottom"
+      data-popper-reference-hidden=""
+      role="presentation"
+      style="position: absolute; top: 0px; left: 0px; width: 0px; margin: 0px; transform: translate(0px, 0px);"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiAutocomplete-paper css-o3wlso-MuiPaper-root-MuiAutocomplete-paper"
+      >
+        <ul
+          aria-labelledby="autocomplete-label"
+          class="MuiAutocomplete-listbox css-1vfr3ul-MuiAutocomplete-listbox"
+          id="autocomplete-listbox"
+          role="listbox"
+        >
+          <li
+            aria-disabled="false"
+            aria-selected="false"
+            class="MuiAutocomplete-option"
+            data-option-index="0"
+            id="autocomplete-option-0"
+            role="option"
+            tabindex="-1"
+          >
+            <span>
+              <span
+                class="css-1n2wxre-IconContainer ep0uteb0"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="MovieIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="css-ztfl0n-TextHighlight ep0uteb1"
+              >
+                movie 
+              </span>
+              <span
+                class="css-1gbrnq5-TextHighlight-TextHighlight ep0uteb1"
+              >
+                title
+              </span>
+            </span>
+          </li>
+          <li
+            aria-disabled="false"
+            aria-selected="false"
+            class="MuiAutocomplete-option"
+            data-option-index="1"
+            id="autocomplete-option-1"
+            role="option"
+            tabindex="-1"
+          >
+            <span>
+              <span
+                class="css-1n2wxre-IconContainer ep0uteb0"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="TvIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="css-ztfl0n-TextHighlight ep0uteb1"
+              >
+                tv 
+              </span>
+              <span
+                class="css-1gbrnq5-TextHighlight-TextHighlight ep0uteb1"
+              >
+                title
+              </span>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+`;

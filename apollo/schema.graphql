@@ -1,0 +1,96 @@
+enum Media {
+  movie
+  tv
+}
+
+type UpcomingResults {
+  id: Int!
+  media_type: Media!
+  poster_path: String
+  release_date: String!
+  title: String!
+}
+
+type Upcoming {
+  page: Int!
+  results: [UpcomingResults!]!
+  total_pages: Int!
+}
+
+type NowPlayingResults {
+  id: Int!
+  media_type: Media!
+  poster_path: String
+  title: String!
+  vote_average: Float!
+}
+
+type NowPlaying {
+  page: Int!
+  results: [NowPlayingResults!]!
+  total_pages: Int!
+}
+
+type MoviesSearchResults {
+  id: Int!
+  media_type: Media!
+  title: String!
+}
+
+type MoviesSearch {
+  cursor: Int
+  hasMore: Boolean
+  page: Int!
+  results: [MoviesSearchResults!]!
+  total_pages: Int!
+}
+
+type SimilarResults {
+  id: Int!
+  media_type: Media!
+  poster_path: String
+  release_date: String!
+  title: String!
+}
+
+type SimilarMovies {
+  cursor: Int
+  hasMore: Boolean
+  results: [SimilarResults!]!
+}
+
+type MovieInfo {
+  backdrop_path: String
+  budget: String!
+  id: Int!
+  media_type: Media!
+  overview: String
+  poster_path: String
+  release_date: String!
+  revenue: String!
+  similar: SimilarMovies!
+  title: String!
+  vote_average: Float!
+}
+
+type TvShowInfo {
+  backdrop_path: String
+  id: Int!
+  media_type: Media!
+  number_of_episodes: Int!
+  number_of_seasons: Int!
+  overview: String
+  poster_path: String
+  release_date: String!
+  similar: SimilarMovies!
+  title: String!
+  vote_average: Float!
+}
+
+type Query {
+  nowPlaying(page: Int = 1): NowPlaying!
+  movieInfo(id: ID!, cursor: Int, pageSize: Int = 4): MovieInfo!
+  moviesSearch(query: String!, cursor: Int, pageSize: Int = 8): MoviesSearch!
+  tvShowInfo(id: ID!, cursor: Int, pageSize: Int = 4): TvShowInfo!
+  upcoming(page: Int = 1): Upcoming!
+}

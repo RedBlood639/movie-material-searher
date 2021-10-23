@@ -1,0 +1,34 @@
+{
+  "extends": [
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:jest/all",
+    "plugin:testing-library/react",
+    "prettier"
+  ],
+  "plugins": [
+    "better-styled-components",
+    "typescript-sort-keys",
+    "sort-keys-fix",
+    "sort-destructure-keys",
+    "simple-import-sort"
+  ],
+  "parserOptions": {
+    "project": "tsconfig.json"
+  },
+  "rules": {
+    "typescript-sort-keys/interface": "warn",
+    "typescript-sort-keys/string-enum": "warn",
+    "sort-keys-fix/sort-keys-fix": "warn",
+    "react/jsx-sort-props": "warn",
+    "sort-destructure-keys/sort-destructure-keys": "warn",
+    "better-styled-components/sort-declarations-alphabetically": "warn",
+    "simple-import-sort/imports": "warn",
+    "simple-import-sort/exports": "warn",
+    "jest/prefer-expect-assertions": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off",
+    "import/order": "off"
+  }
+}

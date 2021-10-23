@@ -1,0 +1,98 @@
+{
+  "name": "movie-searcher",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "yarn": "1.x"
+  },
+  "scripts": {
+    "serve": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest --watch",
+    "lint": "tsc && eslint . --ext ts,tsx --cache --fix",
+    "codegen": "graphql-codegen"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "yarn lint",
+      "prettier --write",
+      "jest --bail --findRelatedTests"
+    ],
+    "*.{json,yml}": "prettier --write"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.3.12",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
+    "@material-ui/core": "^5.0.0-alpha.27",
+    "@material-ui/icons": "^5.0.0-alpha.27",
+    "apollo-datasource-rest": "^0.10.0",
+    "apollo-server-micro": "^2.21.2",
+    "autosuggest-highlight": "^3.1.1",
+    "dayjs": "^1.10.4",
+    "deepmerge": "^4.2.2",
+    "graphql": "^15.5.0",
+    "graphql.macro": "^1.4.2",
+    "lodash.isequal": "^4.5.0",
+    "next": "^10.0.9",
+    "next-compose-plugins": "^2.2.1",
+    "next-plugin-preact": "^3.0.3",
+    "next-pwa": "^5.0.6",
+    "numeral": "^2.0.6",
+    "preact": "^10.5.13",
+    "preact-render-to-string": "^5.1.16",
+    "react": "npm:@preact/compat@0.0.4",
+    "react-dom": "npm:@preact/compat@0.0.4",
+    "react-ssr-prepass": "npm:preact-ssr-prepass@1.1.3"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.21.3",
+    "@graphql-codegen/typescript": "1.21.1",
+    "@graphql-codegen/typescript-operations": "1.17.15",
+    "@graphql-codegen/typescript-react-apollo": "2.2.3",
+    "@graphql-codegen/typescript-resolvers": "^1.19.0",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/preact": "^2.0.1",
+    "@types/autosuggest-highlight": "^3.1.1",
+    "@types/jest": "^26.0.21",
+    "@types/lodash.isequal": "^4.5.5",
+    "@types/node": "^14.14.35",
+    "@types/numeral": "^2.0.1",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "babel-plugin-transform-imports": "^2.0.0",
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-better-styled-components": "^1.1.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.3.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-sort-destructure-keys": "^1.3.5",
+    "eslint-plugin-sort-keys-fix": "^1.1.1",
+    "eslint-plugin-testing-library": "^3.10.1",
+    "eslint-plugin-typescript-sort-keys": "^1.5.0",
+    "husky": "4.3.8",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
+    "typescript": "4.2.3"
+  },
+  "description": "A movie searcher app build using Next.js, Typescript, Apollo, GraphQL and Material UI",
+  "main": "apollo.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "",
+  "license": "ISC"
+}

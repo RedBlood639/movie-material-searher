@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`favorites should open favorites and register click 1`] = `
+<body>
+  <div>
+    <button
+      aria-label="open favorites"
+      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1uaxfgw-MuiButtonBase-root-MuiIconButton-root"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiIconButton-label css-4jkopv-MuiIconButton-label"
+      >
+        <span
+          class="MuiBadge-root css-1c32n2y-MuiBadge-root"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="FavoriteBorderIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+            />
+          </svg>
+          <span
+            class="MuiBadge-colorSecondary MuiBadge-badge MuiBadge-standard MuiBadge-anchorOriginTopRightRectangular css-h98443-MuiBadge-badge"
+          >
+            1
+          </span>
+        </span>
+      </span>
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </button>
+    <div
+      data-popper-escaped=""
+      data-popper-placement="bottom-end"
+      data-popper-reference-hidden=""
+      role="tooltip"
+      style="position: absolute; top: 0px; left: 0px; margin: 0px; transform: translate(0px, 0px);"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation10 ellzw2p0 css-1lhbrf1-MuiPaper-root-StyledPaper"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-overline ellzw2p1 css-1cmqepp-MuiTypography-root-StyledTypography"
+        >
+          Favorites
+        </span>
+        <hr
+          class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+        />
+        <ul
+          class="MuiList-root ellzw2p2 css-keacir-MuiList-root-StyledMenuList"
+          role="menu"
+          tabindex="-1"
+        >
+          <li
+            aria-disabled="false"
+            class="MuiButtonBase-root MuiListItem-root MuiListItem-button MuiMenuItem-root ev7japj0 css-1rk1bf7-MuiButtonBase-root-MuiListItem-root-MuiMenuItem-root-StyledMenuItem"
+            role="menuitem"
+            tabindex="-1"
+          >
+            <div
+              style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 50px; height: 50px;"
+            >
+              <img
+                alt="clicked data"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+            </div>
+            <p
+              class="MuiTypography-root MuiTypography-body1 ev7japj1 css-1q5onuu-MuiTypography-root-Title"
+            >
+              clicked data
+            </p>
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+`;

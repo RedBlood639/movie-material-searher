@@ -1,0 +1,110 @@
+query GetMovieInfo($id: ID!, $pageSize: Int) {
+  movieInfo(id: $id, pageSize: $pageSize) {
+    backdrop_path
+    budget
+    id
+    media_type
+    overview
+    poster_path
+    release_date
+    revenue
+    similar {
+      results {
+        id
+        media_type
+        poster_path
+        release_date
+        title
+      }
+    }
+    title
+    vote_average
+  }
+}
+
+query GetTvShowInfo($id: ID!, $pageSize: Int) {
+  tvShowInfo(id: $id, pageSize: $pageSize) {
+    backdrop_path
+    id
+    media_type
+    number_of_episodes
+    number_of_seasons
+    overview
+    poster_path
+    release_date
+    similar {
+      results {
+        id
+        media_type
+        poster_path
+        release_date
+        title
+      }
+    }
+    title
+    vote_average
+  }
+}
+
+query GetMovies {
+  nowPlaying {
+    page
+    results {
+      id
+      media_type
+      poster_path
+      title
+      vote_average
+    }
+    total_pages
+  }
+  upcoming {
+    page
+    results {
+      id
+      media_type
+      poster_path
+      release_date
+      title
+    }
+    total_pages
+  }
+}
+
+query GetUpcoming($page: Int) {
+  upcoming(page: $page) {
+    page
+    results {
+      id
+      media_type
+      poster_path
+      release_date
+      title
+    }
+    total_pages
+  }
+}
+
+query GetNowPlaying($page: Int) {
+  nowPlaying(page: $page) {
+    page
+    results {
+      media_type
+      id
+      poster_path
+      title
+      vote_average
+    }
+    total_pages
+  }
+}
+
+query GetMoviesSearch($query: String!, $pageSize: Int) {
+  moviesSearch(query: $query, pageSize: $pageSize) {
+    results {
+      id
+      media_type
+      title
+    }
+  }
+}
